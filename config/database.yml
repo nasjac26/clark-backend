@@ -84,3 +84,5 @@ production:
   database: new_project_api_production
   username: new_project_api
   password: <%= ENV['NEW_PROJECT_API_DATABASE_PASSWORD'] %>
+
+
