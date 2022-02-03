@@ -8,6 +8,8 @@
 
 
 HairExtension.delete_all
+Tool.delete_all
+User.delete_all
 
 
 puts "Seeding hair"
@@ -22,3 +24,19 @@ HairExtension.create(name: "18 Inch Grey Hair Extensions", color: "grey", length
 HairExtension.create(name: "20 Inch Grey Hair Extensions", color: "grey", length: 20, price: 100.00, stock: 10, picture: "https://images.freeimages.com/images/large-previews/1a6/hair-1481587.jpg")
 HairExtension.create(name: "18 Inch Grey Hair Extensions", color: "grey", length: 18, price: 100.00, stock: 10, picture: "https://images.freeimages.com/images/large-previews/1a6/hair-1481587.jpg")
 HairExtension.create(name: "18 Inch Purple Hair Extensions", color: "purple", length: 18, price: 100.00, stock: 10, picture: "https://images.freeimages.com/images/large-previews/db3/girl-1568145.jpg")
+
+puts "Seeding users"
+
+User.create(email: "test@gmail.com", password_digest: "password")
+
+puts "Seeding Tools"
+
+Tool.create(name: "Hair Extension Beads", description: "These top quality beads hold hair together when applying extensions", price: 30, stock: 10, picture: "https://i.ibb.co/GkQbTSY/beads.jpg")
+Tool.create(name: "Wire Thingy", description: "These top quality beads hold hair together when applying extensions", price: 30, stock: 10, picture: "https://i.ibb.co/Th2xV8B/scissors.png")
+Tool.create(name: "Wire Cutters", description: "These top quality beads hold hair together when applying extensions", price: 30, stock: 10, picture: "https://i.ibb.co/r5wsQkL/image5.png")
+Tool.create(name: "Clamp", description: "These top quality beads hold hair together when applying extensions", price: 30, stock: 10, picture: "https://i.ibb.co/6D7VBZy/image4.png")
+Tool.create(name: "Carrying Case", description: "These top quality beads hold hair together when applying extensions", price: 30, stock: 10, picture: "https://i.ibb.co/f14K9Lv/image3.png")
+Tool.create(name: "Full Tool Set", description: "These top quality beads hold hair together when applying extensions", price: 30, stock: 10, picture: "https://i.ibb.co/qx2wVQy/image2.png")
+Tool.create(name: "Scissors", description: "These top quality beads hold hair together when applying extensions", price: 30, stock: 10, picture: "https://i.ibb.co/Th2xV8B/scissors.png")
+
+

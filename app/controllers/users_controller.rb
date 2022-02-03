@@ -1,3 +1,4 @@
+
 class UsersController < ApplicationController
 
     def index 
@@ -14,10 +15,18 @@ class UsersController < ApplicationController
         render json: new_user, status: :created
     end
 
+    def update
+        this_user = find_user
+        this_user.update!(user_params)
+        render json: this_user, status: :ok
+    end
+
 
     private 
 
     def user_params
-        params.permit(:username, :password, :password_confirmation, :name, :email)
+        params.permit(:password, :password_confirmation, :email, :licenced)
     end
 end
+
+
