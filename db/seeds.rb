@@ -27,7 +27,8 @@ HairExtension.create(name: "18 Inch Purple Hair Extensions", color: "purple", le
 
 puts "Seeding users"
 
-User.create(email: "test@gmail.com", password_digest: "password")
+User.create(name:"Julian", email: "jacobonasrallah@gmail.com", password: "password", password_confirmation:"password", licenced: true, admin: true)
+User.create(name:"Bill", email: "test@gmail.com", password: "password", password_confirmation:"password", licenced: true, admin: false)
 
 puts "Seeding Tools"
 

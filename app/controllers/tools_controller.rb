@@ -29,6 +29,6 @@ class ToolsController < ApplicationController
     private
 
     def product_update_params
-        params.permit(:stock, :id, :hair_extension)
+        params.permit(:stock)
     end
 end
