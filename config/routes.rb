@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :user_events
+  resources :events
   resources :tools
   resources :hair_extensions
   resources :users

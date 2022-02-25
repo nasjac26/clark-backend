@@ -6,6 +6,7 @@ class UsersController < ApplicationController
     end
 
     def show
+        # validate
         render json: User.find(params[:id]), status: :ok
     end
 
