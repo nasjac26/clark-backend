@@ -6,8 +6,8 @@ class UsersController < ApplicationController
     end
 
     def show
-        # validate
-        render json: User.find(params[:id]), status: :ok
+        user = User.find_by(id: session[:user_id])
+        render json: user
     end
 
     def create
@@ -17,8 +17,9 @@ class UsersController < ApplicationController
     end
 
     def update
+        byebug
         this_user = User.find(params[:id])
-        this_user.update!(user_params)
+        this_user.update(user_params)
         render json: this_user, status: :ok
     end
 
@@ -26,7 +27,7 @@ class UsersController < ApplicationController
     private 
 
     def user_params
-        params.permit(:password, :password_confirmation, :email, :licenced, :admin)
+        params.permit(:id, :user, :password, :password_confirmation, :password_digest, :email, :name, :licenced, :admin)
     end
 end
 

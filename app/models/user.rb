@@ -6,7 +6,7 @@ class User < ApplicationRecord
 
 
     validates :email, presence: true, uniqueness: true, format: { with: /\A[^@\s]+@[^@\s]+\z/, message: 'Invalid email or it is already being used. Please try another!' }
-    validates :password, presence: true, confirmation: true
+    validates :password, presence: true, confirmation: true, on: :create
     attribute :licenced, :boolean, default: 'false'
 
 
