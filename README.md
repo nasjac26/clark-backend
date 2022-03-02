@@ -1,6 +1,6 @@
 # README
 
-This is the database for ->
+This is the database for -> https://github.com/nasjac26/phanes-commisioned-storefront
 
 I used ruby 2.7.4p191 and is setup to run on http://localhost:3001
 
