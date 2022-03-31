@@ -1,0 +1,2 @@
+class LicensedTool < ApplicationRecord
+end
