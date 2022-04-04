@@ -59,5 +59,5 @@ Rails.application.configure do
   # config.action_view.annotate_rendered_view_with_filenames = true
   
   # force HTTPS on production
-  config.force_ssl = false
+  config.force_ssl = true
 end

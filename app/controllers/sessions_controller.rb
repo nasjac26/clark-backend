@@ -10,9 +10,12 @@ class SessionsController < ApplicationController
     def create
         # byebug
         user = User.find_by(email: params[:email])
+        
         if user && user.authenticate(params[:password]) 
             session[:user_id] = user.id
+            session[:email] = user.email
             render json: user, status: :ok
+            UserMailer.with(user: user).welcome_email.deliver_now
         else
             render json: { error: "Username or password not found; try again!" }, status: :unauthorized
         end
