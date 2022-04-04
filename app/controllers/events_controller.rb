@@ -18,7 +18,7 @@ class EventsController < ApplicationController
             event.destroy
             head :no_content
         else
-            render json: { error: "Bird not found"}, status: :not_found
+            render json: { error: "class not found"}, status: :not_found
         end
     end
 

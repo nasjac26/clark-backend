@@ -2,6 +2,8 @@ Rails.application.routes.draw do
   resources :tools
   resources :hair_extensions
   resources :users
+  resources :events
+
 
   #create new users
   post '/signup', to: 'users#create'

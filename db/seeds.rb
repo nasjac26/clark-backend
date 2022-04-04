@@ -45,6 +45,6 @@ Tool.create(name: "Phanes Hair Grippers - 4 Pack", description: "These grip pads
 Tool.create(name: "Phanes Hair Grippers - 6 Pack", description: "These grip pads easily keep flyaways from getting in the way of extension bonds during the application, and prevent slipping. The pads secure the hair down like Velcro but do not pull on the clients hair.", price: 13.99, stock: 10, picture: "https://i.ibb.co/B2RKSgT/hair-grippers-six.jpg", details: "6 grips, Reusable and easily washable, Safe and gentle on hair" )
 
 
-Event.create(name: "PARTY", date: "03/02/23", price: 100, location: "Seattle", description: "Its a party", stock: 10)
+Event.create(name: "PARTY", date: "03/02/23", price: 1, location: "Seattle", description: "Its a party", stock: 10)
     
     
